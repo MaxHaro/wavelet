@@ -9,7 +9,7 @@ class Handler implements URLHandler {
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return String.format("Max's List: %d", arr);
+            return ("Max's List: " + arr);
         } else {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/add")) {
