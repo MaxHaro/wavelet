@@ -16,7 +16,7 @@ class Handler implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("count")) {
                     arr.add(parameters[1]);
-                    return String.format("List is now %d", arr);
+                    return ("String list is " + arr);
                 }
             }
             return "404 Not Found!";
